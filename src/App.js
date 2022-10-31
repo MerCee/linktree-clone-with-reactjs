@@ -2,30 +2,25 @@ import React from "react";
 import "./App.css";
 import Profile from "./components/Profile.js";
 import picture from "./pic.jpg";
+import { SocialIcon } from "react-social-icons";
 
 function App() {
   return (
     <section className="main">
-      <Profile picture={picture} name="Mercy Solomon" />
+      <div className="profile">
+        <Profile
+          picture={picture}
+          name="Mercy Solomon"
+          alt="A picture of Mercy Solomon in a yellow dress"
+        />
+      </div>
+
+      <div className="socials">
+        <SocialIcon url="https://www.twitter.com/etima_" target="_blank" />
+        <SocialIcon url="https://www.slack.com/etima" target="_blank" />
+      </div>
+
       <div className="links">
-        <a
-          id="twitter"
-          href="https://www.twitter.com/etima_"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Twitter Link
-        </a>
-
-        <a
-          id="twitter"
-          href="https://www.slack.com/etima_"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Slack Link
-        </a>
-
         <a
           id="btn__zuri"
           href="https://training.zuri.team/"
